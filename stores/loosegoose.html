@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>LO Loose Goose Cafe</title>
+      <link rel="icon" type="image/x-icon" href="../img/Lunch Ordering-logos_white.png">
+      <link rel="stylesheet" href="../css/style.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top log-nav" id="home-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="../img/Lunch Ordering-logos.jpeg" width="50px" height="50px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link home-nav active" aria-current="page" href="../index.html" style="color: white;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link home-nav" href="../master-fb.html" style="color: white;">Manage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link home-nav" href="../registation.html" style="color: white;">Login</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a style="color: white;" class="nav-link dropdown-toggle home-nav home-nav-active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Our Stores
+                </a>
+                <ul class="dropdown-menu menu-drop" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item sub-item" href="lazenbys.html">Lazenbys</a></li>
+                  <li><a class="dropdown-item sub-item-home sub-nav-active" href="#">Loose Goose</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link home-nav" href="#" data-bs-toggle="modal" data-bs-target="#purchaseModal" style="color: white;">Cart <i class="fas fa-shopping-cart"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"><img src="../img/Lunch Ordering-logos_transparent.png" width="50" height="50"> My Cart</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col-2"></th>
+                    <th scope="col-5">Name</th>
+                    <th scope="col-5">Quantity</th>
+                    <th scope="col-5">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><img src="../img/marta-filipczyk-BOgz07LkcMw-unsplash.jpg" width="50" height="50"></th>
+                    <td>Korean Style Fried Chicken Bao Bun x2</td>
+                    <td>1</td>
+                    <td>$14.00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="../img/tim-toomey-pe9dvM1rQkM-unsplash.jpg" width="50" height="50"></th>
+                    <td>Smoked Beef Brisket Loaded Fries</td>
+                    <td>1</td>
+                    <td>$16.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="text-align: right;">Total: $30.00</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary buy-btn">Purchase Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="card-img-top" src="../img/no-revisions-d1ngW7SNehM-unsplash.jpg" alt="white-wine" height="750px">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Loose Goose Cafe</h1>
+                <p>Choose from a varied street food menu of Tacos, Loaded Fries, a Rice Bowl, Bao Buns & Sweets. Order, rock up and pick up your favourite meal  – delivery is available to certain areas.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid" id="info-store">
+        <div class="row">
+            <div class="col-12 hor-card-col">
+                <div class="card horizontal-card">
+                    <div class="card-horizontal">
+                        <div class="card-body" style="margin-left: 30px; margin-top: 20px;">
+                          <h1 class="card-title">About Loose Goose Cafe</h1>
+                          <div style="font-size: larger; line-height: 80px;">
+                            <div class="row">
+                                <div class="col-5"><i class="fas fa-concierge-bell"></i> Service Options</div>
+                                <div class="col-7">Dine-in - Takeaway - Delivery</div>
+                              </div>
+                              <div class="row">
+                                <div class="col-5"><i class="fas fa-phone"></i> Phone</div>
+                                <div class="col-7"><a href="tel:+61491465827" style="color: black">+61 488 021 038</a></div>
+                              </div>
+                              <div class="row">
+                                <div class="col-5"><i class="fab fa-google"></i> Google Reviews</div>
+                                <div class="col-7"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                              </div>
+                              <div class="row">
+                                <div class="col-5"><i class="fas fa-map-marker-alt"></i> Location</div>
+                                <div class="col-7"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3636.8539278218177!2d147.11862047218474!3d-41.40127828762957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaa70a78e7a230e7b%3A0xdb85049a43c6270e!2sUniversity%20of%20Tasmania%2C%20Newnham%20Campus!5e0!3m2!1sen!2sau!4v1660811000068!5m2!1sen!2sau"width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="img-square-wrapper">
+                        <img src="../img/vicky-ng-KsmkVW0Hsv0-unsplash.jpg" width="100%" height="570px">
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <div class="container-fluid" id="open-hrs">
+        <div class="row">
+            <div class="col-12 hor-card-col">
+                <div class="card horizontal-card">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                          <img src="../img/mike-petrucci-c9FQyqIECds-unsplash.jpg" width="100%" height="500px">
+                        </div>
+                        <div class="card-body ">
+                          <h1 class="card-title" style="text-align:center">Opening Hours</h1>
+                          <div style="font-size: larger; line-height: 80px; text-align: center;">
+                            <div class="row">
+                                <div class="col-6">Monday</div>
+                                <div class="col-6">8:00AM - 2:00PM</div>
+                              </div>
+                              <div class="row">
+                                <div class="col-6">Tuesday</div>
+                                <div class="col-6">8:00AM - 2:00PM</div>
+                              </div>
+                              <div class="row">
+                                <div class="col-6">Wednesday</div>
+                                <div class="col-6">8:00AM - 2:00PM</div>
+                              </div>
+                              <div class="row">
+                                <div class="col-6">Thursday</div>
+                                <div class="col-6">8:00AM - 2:00PM</div>
+                              </div>
+                              <div class="row">
+                                <div class="col-6">Friday</div>
+                                <div class="col-6">8:00AM - 2:00PM</div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="loosegoose-menu">
+        <div class="row">
+            <div class="col-12 hor-card-col">
+                <div class="card horizontal-card">
+                    <div class="card-horizontal">
+                        <div class="card-body ">
+                          <h1 class="card-title" style="text-align:center; margin-top: 30px; color: black">Loose Goose Menu</h1>
+                          <div style="font-size: larger;">
+                            <div class="menu-container" style="margin-top: 30px;">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h2 class="card-title" style="text-align:center; color: #FF9913; margin-top: 15px;"><i class="fas fa-fire"></i> Best Seller</h2>
+                                    </div>
+                                  <div class="row">
+                                    <div class="col-12">
+                                        <div class="food-container">
+                                            <a href="#">
+                                                <img class="laz-food-img-large" src="../img/marta-filipczyk-BOgz07LkcMw-unsplash.jpg" width="60%" height="500px">
+                                                <p class="add-text" style="display: none; color: white"><i class="fas fa-cart-plus"></i></p>
+                                            </a>
+                                        </div>
+                                        <h4 style="text-align: center;" class="card-title laz-food-title">Korean Style Fried Chicken Bao Bun x2</h4>
+                                        <h5 style="text-align: center !important;"><small class="card-text">$14.50</small></h5>
+                                    </div>
+                                  </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h2 class="card-title" style="text-align:center; color: #FF9913; margin-top: 15px;">Tacos</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                      <div class="card">
+                                        <div class="card-body">
+                                            <div class="food-container">
+                                                <a href="#">
+                                                    <img src="../img/davey-gravy-0YjyiBkNGdE-unsplash.jpg" class="laz-food-img" width="100%" height="250">
+                                                    <p class="add-text" style="display: none; color: white"><i class="fas fa-cart-plus"></i></p>
+                                                </a>
+                                            </div>
+                                          <h6 style="text-align: center" class="card-title laz-food-title">Pulled Pork Taco</h6>
+                                          <p style="text-align: center !important;"><small class="card-text">$14.00</small></p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                      <div class="card">
+                                        <div class="card-body">
+                                            <div class="food-container">
+                                                <a href="#">
+                                                    <img src="../img/davey-gravy--542jfSvrm4-unsplash.jpg" class="laz-food-img" width="100%" height="250">
+                                                    <p class="add-text" style="display: none; color: white"><i class="fas fa-cart-plus"></i></p>
+                                                </a>
+                                            </div>
+                                          <h6 style="text-align: center" class="card-title laz-food-title">Korean Style Fried Chicken Taco</h6>
+                                          <p style="text-align: center !important;"><small class="card-text">$14.00</small></p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="card">
+                                          <div class="card-body">
+                                            <div class="food-container">
+                                                <a href="#">
+                                                    <img src="../img/davey-gravy-emTuzwtEwrc-unsplash.jpg" class="laz-food-img" width="100%" height="250">
+                                                    <p class="add-text" style="display: none; color: white"><i class="fas fa-cart-plus"></i></p>
+                                                </a>
+                                            </div>
+                                            <h6 style="text-align: center;" class="card-title laz-food-title">Smoked Beef Brisket Taco</h6>
+                                            <p style="text-align: center !important;"><small class="card-text">$14.00</small></p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-3">
+                                        <div class="card">
+                                          <div class="card-body">
+                                            <div class="food-container">
+                                                <a href="#">
+                                                    <img src="../img/davey-gravy-vQz3vuFMEl4-unsplash.jpg" class="laz-food-img" width="100%" height="250">
+                                                    <p class="add-text" style="display: none; color: white"><i class="fas fa-cart-plus"></i></p>
+                                                </a>
+                                            </div>
+                                            <h6 style="text-align: center;" class="card-title laz-food-title">Vegan Duck Taco (V)(VG)</h6>
+                                            <p style="text-align: center !important;"><small class="card-text">$14.00</small></p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-12">
+                                        <h2 class="card-title" style="text-align:center; color: #FF9913; margin-top: 15px;">Loaded Fries</h2>
+                                    </div>
+                                </div>
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <div class="card">
+                                        <div class="card-body">
+                                            <div class="food-container">
+                                                <a href="#">
+                                                    <img src="../img/shanice-garcia-Dq5g1u1eg1Q-unsplash.jpg" class="laz-food-img" width="100%" height="250">
+                                                    <p class="add-text" style="display: none; color: white"><i class="fas fa-cart-plus"></i></p>
+                                                </a>
+                                            </div>
+                                          <h6 style="text-align: center" class="card-title laz-food-title">Pulled Pork Loaded Fries</h6>
+                                          <p style="text-align: center !important;"><small class="card-text">$16.00</small></p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                      <div class="card">
+                                        <div class="card-body">
+                                            <div class="food-container">
+                                                <a href="#">
+                                                    <img src="../img/mustafa-bashari-ZXQ9m5kgO8Y-unsplash.jpg" class="laz-food-img" width="100%" height="250">
+                                                    <p class="add-text" style="display: none; color: white"><i class="fas fa-cart-plus"></i></p>
+                                                </a>
+                                            </div>
+                                          <h6 style="text-align: center" class="card-title laz-food-title">Korean Fried Chicken Loaded Fries</h6>
+                                          <p style="text-align: center !important;"><small class="card-text">$16.00</small></p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="card">
+                                          <div class="card-body">
+                                            <div class="food-container">
+                                                <a href="#">
+                                                    <img src="../img/silvia-HCgi1iR4chs-unsplash.jpg" class="laz-food-img" width="100%" height="250">
+                                                    <p class="add-text" style="display: none; color: white"><i class="fas fa-cart-plus"></i></p>
+                                                </a>
+                                            </div>
+                                            <h6 style="text-align: center;" class="card-title laz-food-title">Box of Fries with Garlic Aioli</h6>
+                                            <p style="text-align: center !important;"><small class="card-text">$16.00</small></p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-3">
+                                        <div class="card">
+                                          <div class="card-body">
+                                            <div class="food-container">
+                                                <a href="#">
+                                                    <img src="../img/tim-toomey-pe9dvM1rQkM-unsplash.jpg" class="laz-food-img" width="100%" height="250">
+                                                    <p class="add-text" style="display: none; color: white"><i class="fas fa-cart-plus"></i></p>
+                                                </a>
+                                            </div>
+                                            <h6 style="text-align: center;" class="card-title laz-food-title">Smoked Beef Brisket Loaded Fries</h6>
+                                            <p style="text-align: center !important;"><small class="card-text">$16.00</small></p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-12">
+                                        <h2 class="card-title" style="text-align:center; color: #FF9913; margin-top: 15px;">Rice Bowl</h2>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="card">
+                                          <div class="card-body">
+                                            <div class="food-container">
+                                                <a href="#">
+                                                    <img src="../img/goodeats-yqr-AKCB74kr4UI-unsplash.jpg" class="laz-food-img-med" width="100%" height="300">
+                                                    <p class="add-text" style="display: none; color: white"><i class="fas fa-cart-plus"></i></p>
+                                                </a>
+                                            </div>
+                                            <h6 style="text-align: center;" class="card-title laz-food-title">Smoked Beef Brisket Rice Bowl</h6>
+                                            <p style="text-align: center !important;"><small class="card-text">$14.00</small></p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-4">
+                                        <div class="card">
+                                          <div class="card-body">
+                                            <div class="food-container">
+                                                <a href="#">
+                                                    <img src="../img/albany-capture-qi-ouiVWh6M-unsplash.jpg" class="laz-food-img-med" width="100%" height="300">
+                                                    <p class="add-text" style="display: none; color: white"><i class="fas fa-cart-plus"></i></p>
+                                                </a>
+                                            </div>
+                                            <h6 style="text-align: center;" class="card-title laz-food-title">Korean Style Fried Chicken Rice Bowl</h6>
+                                            <p style="text-align: center !important;"><small class="card-text">$14.00</small></p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-4">
+                                        <div class="card">
+                                          <div class="card-body">
+                                            <div class="food-container">
+                                                <a href="#">
+                                                    <img src="../img/james-frewin-CzD0EHabuzE-unsplash.jpg" class="laz-food-img-med" width="100%" height="300">
+                                                    <p class="add-text" style="display: none; color: white"><i class="fas fa-cart-plus"></i></p>
+                                                </a>
+                                            </div>
+                                            <h6 style="text-align: center;" class="card-title laz-food-title">Vegan Duck Rice Bowl (V)(VG)</h6>
+                                            <p style="text-align: center !important;"><small class="card-text">$14.00</small></p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-12">
+                                        <h2 class="card-title" style="text-align:center; color: #FF9913; margin-top: 15px;">Drinks</h2>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="card">
+                                          <div class="card-body">
+                                            <div class="food-container">
+                                                <a href="#">
+                                                    <img src="../img/alessandro-d-antonio-qy4vrr2qi3M-unsplash.jpg" class="laz-food-img-med" width="100%" height="300">
+                                                    <p class="add-text" style="display: none; color: white"><i class="fas fa-cart-plus"></i></p>
+                                                </a>
+                                            </div>
+                                            <h6 style="text-align: center;" class="card-title laz-food-title">Original Taste CocaCola</h6>
+                                            <p style="text-align: center !important;"><small class="card-text">$6.00</small></p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-4">
+                                        <div class="card">
+                                          <div class="card-body">
+                                            <div class="food-container">
+                                                <a href="#">
+                                                    <img src="../img/micheile-dot-com-Lb1BqFJOock-unsplash.jpg" class="laz-food-img-med" width="100%" height="300">
+                                                    <p class="add-text" style="display: none; color: white"><i class="fas fa-cart-plus"></i></p>
+                                                </a>
+                                            </div>
+                                            <h6 style="text-align: center;" class="card-title laz-food-title">Bundaberg Blood Orange</h6>
+                                            <p style="text-align: center !important;"><small class="card-text">$9.00</small></p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-4">
+                                        <div class="card">
+                                          <div class="card-body">
+                                            <div class="food-container">
+                                                <a href="#">
+                                                    <img src="../img/nikhil-W8bgIJQ1jac-unsplash.jpg" class="laz-food-img-med" width="100%" height="300">
+                                                    <p class="add-text" style="display: none; color: white"><i class="fas fa-cart-plus"></i></p>
+                                                </a>
+                                            </div>
+                                            <h6 style="text-align: center;" class="card-title laz-food-title">Pepsi</h6>
+                                            <p style="text-align: center !important;"><small class="card-text">$6.00</small></p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="../js/form-validation-by-tran.js"></script>
+      <script src="../js/beautify-by-tran.js"></script>
+    </body>
+    <footer>
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top">
+          <p class="col-md-4 mb-0 text-muted" style="color: white !important" >© 2022 Designed and Programmed By <i class="fas fa-robot"></i>Tran Tuyen Nguyen</p>
+      
+          <a href="../index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img src="../img/Lunch Ordering-logos_white.png" width="100px" height="100px">
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted" style="color: white !important">Home</a></li>
+            <li class="nav-item"><a href="../registation.html" class="nav-link px-2 text-muted" style="color: white !important">Login</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" style="color: white !important">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" style="color: white !important">About</a></li>
+          </ul>
+        </footer>
+      </div>
+    </footer>
+</html>

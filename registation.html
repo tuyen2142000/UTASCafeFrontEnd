@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LO Registration</title>
+        <link rel="icon" type="image/x-icon" href="img/Lunch Ordering-logos_white.png">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+    </head>
+    <body style=" background-image: linear-gradient(to bottom right, #FE4365, #FC9D9A, #F9CDAD, #C8C8A9, #83AF9B);">
+
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top log-nav" id="log-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="img/Lunch Ordering-logos.jpeg" width="50px" height="50px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link log-nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link log-nav-link" href="master-fb.html">Manage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link log-nav-link active log-nav-active" href="#">Login</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link log-nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Our Stores
+                </a>
+                <ul class="dropdown-menu menu-drop" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item sub-item" href="./stores/lazenbys.html">Lazenbys</a></li>
+                  <li><a class="dropdown-item sub-item" href="./stores/loosegoose.html">Loose Goose</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link log-nav-link" href="#" data-bs-toggle="modal" data-bs-target="#purchaseModal">Cart <i class="fas fa-shopping-cart"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"><img src="img/Lunch Ordering-logos_transparent.png" width="50" height="50"> My Cart</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col-2"></th>
+                    <th scope="col-5">Name</th>
+                    <th scope="col-5">Quantity</th>
+                    <th scope="col-5">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><img src="img/marta-filipczyk-BOgz07LkcMw-unsplash.jpg" width="50" height="50"></th>
+                    <td>Korean Style Fried Chicken Bao Bun x2</td>
+                    <td>1</td>
+                    <td>$14.00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="img/tim-toomey-pe9dvM1rQkM-unsplash.jpg" width="50" height="50"></th>
+                    <td>Smoked Beef Brisket Loaded Fries</td>
+                    <td>1</td>
+                    <td>$16.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="text-align: right;">Total: $30.00</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary buy-btn">Purchase Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="account-log-body container">
+        <div class="row">
+          <div class="col-6">
+            <div class="login-logo">
+              <img src="img/Lunch Ordering-logos_transparent.png" class="floating-logo" width="650px" height="650px">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="log-forms">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link nav-form active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Log In</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link nav-form" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Register</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                  <form class="login-form">
+                    <div class="row">
+                      <div class="col-12">
+                        <label for="email-register">Email Address</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="email-addon"><i class="fas fa-envelope"></i></span>
+                          <input type="email" id="email-login" class="form-control" name="email-log" aria-label="Email" aria-describedby="email-addon">
+                        </div>
+                      </div>
+                      <span class="error-warn" id="error-warn-email-log">Please enter your email correctly</span>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <label for="email-register">Password</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="pass-addon"><i class="fas fa-lock"></i></span>
+                          <input type="email" id="password-login" class="form-control" name="pass-log" aria-label="Password" aria-describedby="pass-addon">
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary form-btn" id="log-btn" disabled>Log In</button>
+                  </form>
+                </div>
+                <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                  <form class="register-form">
+                    <div class="row">
+                      <div class="col-2">
+                        <label for="inputState">Prefix</label>
+                        <select id="inputState" class="form-control">
+                          <option value="1" selected>Mr.</option>
+                          <option value="2">Mrs.</option>
+                          <option value="3">Ms.</option>
+                          <option value="4">Dr.</option>
+                        </select>
+                      </div>
+                      <div class="col-10">
+                        <label for="name">Full Name</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="name-addon"><i class="fas fa-user"></i></span>
+                          <input type="text" id="name" placeholder="Tran Doe" class="form-control" aria-label="Name" name="name" aria-describedby="name-addon">
+                        </div>
+                      </div>
+                      <span class="error-warn" id="error-warn-name">Please enter your name</span>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <label for="email-register">Email Address</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="email-addon"><i class="fas fa-envelope"></i></span>
+                          <input type="email" placeholder="abc@xyz.com" id="email-register" class="form-control" name="email-reg" aria-label="Email" aria-describedby="email-addon">
+                        </div>
+                      </div>
+                      <span class="error-warn" id="error-warn-email">Please enter your email correctly</span>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">
+                        <label for="password-register">Password</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="pw-addon"><i class="fas fa-lock"></i></span>
+                          <input type="password" id="password-register" class="form-control" name="password" aria-label="Password" aria-describedby="pw-addon">
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <label for="cpassword-register">Confirm Password</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="cpw-addon"><i class="fas fa-repeat"></i></span>
+                          <input type="password" id="cpassword-register" class="form-control" name="cpassword" aria-label="CPassword" aria-describedby="cpw-addon">
+                        </div>
+                      </div>
+                      
+                      <span class="error-warn" id="error-warn-password0">Your password should have at least 1 lowercase letter</span>
+                      <span class="error-warn" id="error-warn-password1">Your password should have at least 7 characters</span>
+                      <span class="error-warn" id="error-warn-password2">Your password should have at least 1 capital letter</span>
+                      <span class="error-warn" id="error-warn-password3">Your password should have at least 1 number</span>
+                      <span class="error-warn" id="error-warn-password4">Your password should have at least 1 special character</span>
+                      <span class="error-warn" id="error-warn-password5">Your passwords are not the same, please re-enter your passwords</span>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <label for="phoneno">Phone Number</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="phone-addon"><img src="img/australia.png"></i><small style="padding-left: 5px;">+61</small></span>
+                          <input type="number" id="cpassword-register" placeholder="0412345678" class="form-control phone-field" name="phone"  aria-label="PhoneNo" aria-describedby="phone-addon">
+                        </div>
+                      </div>
+                      <span class="error-warn" id="error-warn-phone">Please enter the correct Australian phone number</span>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <label for="sid">Staff/Student ID</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="id-addon"><i class="fas fa-id-card"></i></span>
+                          <input type="number" id="cpassword-register" placeholder="123456" placeholder="0412345678" class="form-control phone-field" name="sid"  aria-label="StudentID" aria-describedby="phone-addon">
+                        </div>
+                      </div>
+                      <span class="error-warn" id="error-warn-id">Please enter your UTAS ID correctly</span>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <label for="ccard">Credit Card Number</label><img src="img/mastercard-6.svg" width="50" height="30"> <img src="img/visa-2.svg" width="50" height="30">
+                        <div class="input-group mb-3 col-7">
+                          <span class="input-group-text" id="card-addon"><i class="far fa-credit-card"></i></span>
+                          <input type="number" id="cpassword-register" placeholder="5217231454213113" class="form-control phone-field" name="ccard"  aria-label="StudentID" aria-describedby="phone-addon">
+                        </div>
+                      </div>
+                      <span class="error-warn" id="error-warn-card">Please enter a correct card number</span>
+                    </div>
+                    <div class="row">
+                      <div class="col-9">
+                        <label for="edate">Expired</label>
+                        <div class="input-group mb-3 col-7">
+                          <span class="input-group-text" id="expire-addon"><i class="fas fa-calendar-times"></i></span>
+                          <input type="month" id="cpassword-register" class="form-control" name="edate"  aria-label="ExpiredDate" aria-describedby="expire-addon">
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <label for="cvv">CVV</label>
+                        <div class="input-group mb-3 col-7">
+                          <span class="input-group-text" id="cvv-addon"><i class="fas fa-shield"></i></span>
+                          <input type="tel" maxlength="3" required="true" id="cpassword-register" class="form-control" name="cvv"  aria-label="CVV" aria-describedby="cvv-addon">
+                        </div>
+                      </div>
+                      <span class="error-warn" id="error-warn-ed">Your card has been expired, please enter a new card</span>
+                    </div>
+                      <button type="submit" class="btn btn-primary form-btn" id="reg-btn" disabled>Register</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="js/form-validation-by-tran.js"></script>
+      <script src="js/beautify-by-tran.js"></script>
+    </body>
+    <footer>
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted">© 2022 Designed and Programmed By <i class="fas fa-robot"></i> Tran Tuyen Nguyen</p>
+      
+          <a href="index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img src="img/Lunch Ordering-logos_black.png" width="100px" height="100px">
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Login</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          </ul>
+        </footer>
+      </div>
+    </footer>
+</html>

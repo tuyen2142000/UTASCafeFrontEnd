@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>LO Management</title>
+      <link rel="icon" type="image/x-icon" href="img/Lunch Ordering-logos_white.png">
+      <link rel="stylesheet" href="css/style.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="sidebar">
+          <p style="text-align: center;"><img src="img/Lunch Ordering-logos.jpeg" width="100px" height="100px"></p>
+          <a href="#"><i class="far fa-chart-bar"></i> Overview</a>
+          <a href="#"><i class="fas fa-user-edit"></i> Directors</a>
+          <a href="#"><i class="fas fa-user-tie"></i> Customers</a>
+          <a href="#"><i class="fas fa-users"></i> Managers</a>
+          <a href="#" class="active-manage"><i class="fas fa-hamburger"></i> Food & Beverage</a>
+          <a href="#"><i class="fas fa-store"></i> Stores</a>
+          <a href="#"><i class="far fa-credit-card"></i> Orders</a>
+          <a href="index.html" class="home-nav-manage"><i class="fas fa-home"></i> Homepage</a>
+        </div>
+
+        <div class="main-content">
+          <div class="manage-content">
+            <h1>Food and Beverage Management</h1>
+            <div class="management-table">
+              <p style="text-align: right;"><button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#addModal"><i class="fas fa-plus"></i> Add New Food and Beverage</button> <button class="btn btn-warning" type="submit"><i class="fas fa-trash"></i> Trash</button></p>
+              
+
+              <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header modal-management-header">
+                      <h5 class="modal-title" id="exampleModalLabel">New Food and Beverage Information</h5>
+                      <button type="button" class="btn-close btn-add-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="itemName" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="itemName" aria-describedby="itemName">
+                        </div>
+                        <div class="row">
+                          <div class="mb-3 col-6">
+                            <label for="itemPrice" class="form-label">Price</label>
+                            <input type="number" class="form-control" id="itemPrice" aria-describedby="itemPrice">
+                          </div>
+                          <div class="mb-3 col-6">
+                            <label for="storeSelect" class="form-label">Store</label>
+                            <select id="storeSelect" class="form-select">
+                              <option value=0>Lazenbys</option>
+                              <option value=1>Loose Goose</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label for="formFile" class="form-label">Image of Food and Beverage</label>
+                            <input class="form-control" type="file" id="formFile">
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="applyDate" class="form-label">Applied Date</label>
+                          <input type="date" class="form-control" id="applyDate" aria-describedby="applyDate">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Add</button>
+                    </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+
+
+              <table class="table main-table  table-striped table-hover table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Store</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/julia-kicova-18YZ7zuQG4Q-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Sweet Potato and Bacon Soup</td>
+                    <td><a href="#">Lazenbys</a></td>
+                    <td>Dine in: $7.50 - Take away: $5.00</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/logan-jeffrey-QcMm7CtKbM8-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Spinach and Ricotta Tortellini</td>
+                    <td><a href="#">Lazenbys</a></td>
+                    <td>$11.80</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/ca-creative-cdVqG9vnCVw-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Beef with Steamed Jasmine Rice</td>
+                    <td><a href="#">Lazenbys</a></td>
+                    <td>$12.80</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/markus-spiske-pUxCJ77gTSk-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Fish Burger with Sweet Chilli Mayo</td>
+                    <td><a href="#">Lazenbys</a></td>
+                    <td>$9.00</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/pesce-huang-GR4Y5K8gwq8-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Beer Battered Fries with Garlic Aoili</td>
+                    <td><a href="#">Lazenbys</a></td>
+                    <td>$6.50</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/ayesha-firdaus-B5KHSDnAxRw-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Antipasto and Pasto Pasta Salad</td>
+                    <td><a href="#">Lazenbys</a></td>
+                    <td>$9.00</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/sara-dubler-pCD5JJl2l50-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Smoked Salmon and Caper Potato Salad</td>
+                    <td><a href="#">Lazenbys</a></td>
+                    <td>$9.00</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/sam-moghadam-khamseh-LUv656869_A-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Chicken and Prawn Rice Salad</td>
+                    <td><a href="#">Lazenbys</a></td>
+                    <td>$9.00</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/logan-jeffrey-QcMm7CtKbM8-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Antipasto and Pasto Pasta Salad</td>
+                    <td><a href="#">Lazenbys</a></td>
+                    <td>$14.50</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/marta-filipczyk-BOgz07LkcMw-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Korean Style Fried Chicken Bao Bun x2</td>
+                    <td><a href="#">Loose Goose</a></td>
+                    <td>$14.00</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/davey-gravy-0YjyiBkNGdE-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Pulled Pork Taco</td>
+                    <td><a href="#">Loose Goose</a></td>
+                    <td>$14.00</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/davey-gravy--542jfSvrm4-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Korean Style Fried Chicken Taco</td>
+                    <td><a href="#">Loose Goose</a></td>
+                    <td>$14.00</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/davey-gravy-emTuzwtEwrc-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Smoked Beef Brisket Taco</td>
+                    <td><a href="#">Loose Goose</a></td>
+                    <td>$14.000</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/davey-gravy-vQz3vuFMEl4-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Vegan Duck Taco (V)(VG)</td>
+                    <td><a href="#">Loose Goose</a></td>
+                    <td>$16.00</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/shanice-garcia-Dq5g1u1eg1Q-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Pulled Pork Loaded Fries</td>
+                    <td><a href="#">Loose Goose</a></td>
+                    <td>$16.00</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/mustafa-bashari-ZXQ9m5kgO8Y-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Korean Fried Chicken Loaded Fries</td>
+                    <td><a href="#">Loose Goose</a></td>
+                    <td>$16.00</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/silvia-HCgi1iR4chs-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Box of Fries with Garlic Aioli</td>
+                    <td><a href="#">Loose Goose</a></td>
+                    <td>$16.00</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/tim-toomey-pe9dvM1rQkM-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Smoked Beef Brisket Loaded Fries</td>
+                    <td><a href="#">Loose Goose</a></td>
+                    <td>$14.00</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/goodeats-yqr-AKCB74kr4UI-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Smoked Beef Brisket Rice Bowl</td>
+                    <td><a href="#">Loose Goose</a></td>
+                    <td>$14.00</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/albany-capture-qi-ouiVWh6M-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Korean Style Fried Chicken Rice Bowl</td>
+                    <td><a href="#">Loose Goose</a></td>
+                    <td>$14.00</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/james-frewin-CzD0EHabuzE-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Vegan Duck Rice Bowl (V)(VG)</td>
+                    <td><a href="#">Loose Goose</a></td>
+                    <td>$14.00</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/alessandro-d-antonio-qy4vrr2qi3M-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Original Taste CocaCola</td>
+                    <td><a href="#">Loose Goose</a></td>
+                    <td>$6.00</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/micheile-dot-com-Lb1BqFJOock-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Bundaberg Blood Orange</td>
+                    <td><a href="#">Loose Goose</a></td>
+                    <td>$9.00</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                  <tr>
+                    <td><p style="text-align: center"><img src="img/nikhil-W8bgIJQ1jac-unsplash.jpg" width="80" height="80"></p></td>
+                    <td>Pepsi</td>
+                    <td><a href="#">Loose Goose</a></td>
+                    <td>$6.00</td>
+                    <td><button class="btn btn-success" type="submit"><i class="fas fa-edit"></i></button> <button type="button" class="btn btn-warning"><i class="fas fa-trash"></i></button> <button type="button" class="btn btn-danger"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/form-validation-by-tran.js"></script>
+        <script src="js/beautify-by-tran.js"></script>
+    </body>
+    <footer class="main-content">
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top">
+          <p class="col-md-6 mb-0 text-muted" >© 2022 Designed and Programmed By <i class="fas fa-robot"></i> Tran Tuyen Nguyen</p>
+      
+          <a href="index.html" class="col-md-6 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img src="img/Lunch Ordering-logos_black.png" width="100px" height="100px">
+          </a>
+        </footer>
+      </div>
+    </footer>
+</html>

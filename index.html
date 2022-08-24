@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>LO HomePage</title>
+      <link rel="icon" type="image/x-icon" href="img/Lunch Ordering-logos_white.png">
+      <link rel="stylesheet" href="css/style.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top log-nav" id="home-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/Lunch Ordering-logos.jpeg" width="50px" height="50px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link home-nav active home-nav-active" aria-current="page" href="#" style="color: white;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link home-nav" href="master-fb.html" style="color: white;">Manage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link home-nav" href="registation.html" style="color: white;">Login</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a style="color: white;" class="nav-link dropdown-toggle home-nav" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Our Stores
+                </a>
+                <ul class="dropdown-menu menu-drop" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item sub-item-home" href="stores/lazenbys.html">Lazenbys</a></li>
+                  <li><a class="dropdown-item sub-item-home" href="stores/loosegoose.html">Loose Goose</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link home-nav" href="#" data-bs-toggle="modal" data-bs-target="#purchaseModal" style="color: white;">Cart <i class="fas fa-shopping-cart"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"><img src="img/Lunch Ordering-logos_transparent.png" width="50" height="50"> My Cart</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col-2"></th>
+                    <th scope="col-5">Name</th>
+                    <th scope="col-5">Quantity</th>
+                    <th scope="col-5">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><img src="img/marta-filipczyk-BOgz07LkcMw-unsplash.jpg" width="50" height="50"></th>
+                    <td>Korean Style Fried Chicken Bao Bun x2</td>
+                    <td>1</td>
+                    <td>$14.00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="img/tim-toomey-pe9dvM1rQkM-unsplash.jpg" width="50" height="50"></th>
+                    <td>Smoked Beef Brisket Loaded Fries</td>
+                    <td>1</td>
+                    <td>$16.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="text-align: right;">Total: $30.00</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary buy-btn">Purchase Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="card-img-top" src="img/towfiqu-barbhuiya-X37_L9L6LX4-unsplash.jpg" alt="white-wine" height="900px">
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="container-fluid" id="cont1">
+            <div class="row">
+                <div class="col-12 hor-card-col">
+                    <div class="card horizontal-card">
+                        <div class="card-horizontal ">
+                            <div class="card-body body-horizontal">
+                                <h1 class="card-title">Hot and Yummy</h1>
+                                <p style="color: black; font-size: x-large;" class="card-text">You can set the time of picking up, our stores will hand you your lunch in its best condition</p>
+                            </div>
+                            <div class="img-square-wrapper">
+                              <img src="img/food.png" class="floating-food" width="100%" height="500px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="margin-top: 3%; margin-bottom: 5%;">
+          <div class="row">
+              <div class="col-12">
+                <h1 style="text-align: center;">Our Stores</h1>
+              </div>
+              <div class="col-sm-6">
+                <div class="card store-card">
+                  <div class="card-body">
+                    <h2 class="card-title"><a href="./stores/lazenbys.html" class="store-name" style="color: black; text-decoration: none;">Lazenby's Cafe</a></h2>
+                    <a href="./stores/lazenbys.html" style="color: black"><img src="img/rod-long-WC7LeX79iEU-unsplash.jpg" class="shop-img" width="100%" height="500px"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card store-card">
+                  <div class="card-body">
+                    <h2 class="card-title"><a href="./stores/loosegoose.html" class="store-name" style="color: black; text-decoration: none;">Loose Goose</a></h2>
+                    <a href="./stores/loosegoose.html" style="color: black"><img src="img/no-revisions-d1ngW7SNehM-unsplash.jpg" class="shop-img" width="100%" height="500px"></a>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+
+        <div class="container-fluid" id="cont2">
+          <div class="row">
+              <div class="col-12 hor-card-col">
+                  <div class="card horizontal-card">
+                      <div class="card-horizontal ">
+                          <div class="card-body body-horizontal">
+                            <h1 class="ins-title">5 steps to order with Lunch Ordering</h1>
+                          </div>
+                          <div class="img-square-wrapper ins-list">
+                            <p class="ins-step">Step 1: <span><a href="registation.html" style="color: black">Create</a> an LO account</span></p>
+                            <p class="ins-step">Step 2: <span>Go to our stores and check for some good food</span></p>
+                            <p class="ins-step">Step 3: <span>Add your lunch into the cart</span></p>
+                            <p class="ins-step">Step 4: <span>Pay for your lunch</span></p>
+                            <p class="ins-step">Step 5: <span>Come to your store and get your lunch</span></p>
+                            <p class="ins-step">Bonus step: <span>Have a good one!</span></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+        <div class="container-fluid" id="cont3">
+          <div class="row">
+              <div class="col-12 hor-card-col">
+                  <div class="card horizontal-card">
+                      <div class="card-horizontal">
+                          <div class="img-square-wrapper">
+                            <img src="img/adem-ay-zs-41Br0WhQ-unsplash.jpg" width="100%" height="500px">
+                          </div>
+                          <div class="card-body body-horizontal">
+                            <h1 class="card-title">Easy pick up</h1>
+                            <p style="color: black; font-size: larger;" class="card-text">We will send a message to your phone, you just need to show it to our staff and you are good to go</p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="js/form-validation-by-tran.js"></script>
+      <script src="js/beautify-by-tran.js"></script>
+    </body>
+    <footer>
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted">© 2022 Designed and Programmed By <i class="fas fa-robot"></i> Tran Tuyen Nguyen</p>
+      
+          <a href="#" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img src="img/Lunch Ordering-logos_black.png" width="100px" height="100px">
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="registation.html" class="nav-link px-2 text-muted">Login</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          </ul>
+        </footer>
+      </div>
+    </footer>
+</html>

@@ -1,0 +1,452 @@
+.active-link{
+    font-weight: bold;
+}
+
+.nav-text{
+    color:black !important;
+}
+
+.log-nav{
+  position: fixed !important;
+  width: 100% !important;
+}
+
+.home-nav-active{
+  border-bottom:2px solid whitesmoke; 
+  border-color: whitesmoke !important;
+}
+
+.log-nav-active{
+  border-bottom:2px solid black; 
+}
+
+.log-nav-link:hover{
+  color: #CC527A !important;
+}
+
+.home-nav:hover{
+  color: #FF9913 !important;
+}
+
+.card-group{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+.btn-details{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 20px !important;
+}
+
+.tables-list{
+    margin: 100px;
+}
+
+.reg-btn{
+    background-color: Transparent !important;
+    background-repeat:no-repeat !important;
+    border: none !important;
+    margin-top: 2px; 
+}
+
+.inp-row{
+    margin-top: 5px !important;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.hor-card-col{
+  padding: 0 !important ;
+}
+
+.horizontal-card{
+    border: none !important;
+}
+
+.body-horizontal{
+    margin: auto;
+}
+
+hr{
+    margin-left: 60px !important;
+    margin-right: 60px !important;
+    height: 2px !important;
+}
+
+.card{
+  background-color: transparent !important;
+}
+
+
+  .account-log-body{
+    margin-left: 100px;
+    margin-right: 80px !important;
+  }
+
+  .log-forms{
+    margin-top:180px;
+    background-color: #FAF8F6;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  }
+
+  .login-logo{
+    margin: auto !important;
+  }
+
+  .login-form{
+    padding:20px;
+    line-height: 40px;
+  }
+
+  .register-form{
+    padding:20px;
+    line-height: 40px;
+  }
+
+  .form-btn{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: #FE4365 !important;
+    border-color: #FE4365 !important;
+  }
+
+  .buy-btn{
+    background-color: #FE4365 !important;
+    border-color: #FE4365 !important;
+  }
+
+  .nav-form{
+    color: white !important;
+    background-color: #FC9D9A  !important;
+  }
+
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background-color: #FE4365 !important; 
+    border-color: #FE4365 !important;
+    color: white !important;
+  }
+
+  select.form-control {
+    -webkit-appearance: menulist;
+  }
+
+    .phone-field input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  
+  
+    .phone-field input[type=number]  {
+      -moz-appearance: textfield;
+    }
+
+
+    .floating-logo{
+      transform: translateY(-2%);
+      animation: floater-logo 4s infinite;
+      transition: ease 0.5s;
+    }
+    @keyframes floater-logo {
+      0%{transform: translateY(-2%);transition: ease 0.5s;}
+      50%{transform: translateY(2%);transition: ease 0.5s;}
+    }
+
+    .floating-food{
+      transform: translateX(2%);
+      animation: floater-food 3s infinite;
+      transition: ease 0.1s;
+    }
+    @keyframes floater-food {
+      0%{transform: translateX(2%);transition: ease 0.1s;}
+      50%{transform: translateX(-2%);transition: ease 0.1s;}
+    }
+
+
+    .input-group-text{
+      color:#FE4365 !important;
+      background-color: #ffffff !important;
+    }
+
+    
+
+    .error-warn#error-warn-name{
+      color:#FE4365 ;
+      display: none;
+    }
+
+    .error-warn#error-warn-ed{
+      color:#FE4365 ;
+      display: none;
+    }
+
+    .error-warn#error-warn-card{
+      color:#FE4365 ;
+      display: none;
+    }
+
+    .error-warn#error-warn-id{
+      color:#FE4365 ;
+      display: none;
+    }
+
+    .error-warn#error-warn-email{
+      color:#FE4365 ;
+      display: none;
+    }
+
+
+    .error-warn#error-warn-password0{
+      color:#FE4365 ;
+      display: none;
+    }
+
+    .error-warn#error-warn-password1{
+      color:#FE4365 ;
+      display: none;
+    }
+
+    .error-warn#error-warn-password2{
+      color:#FE4365 ;
+      display: none;
+    }
+
+    .error-warn#error-warn-password3{
+      color:#FE4365 ;
+      display: none;
+    }
+
+    .error-warn#error-warn-password4{
+      color:#FE4365 ;
+      display: none;
+    }
+
+    .error-warn#error-warn-password5{
+      color:#FE4365 ;
+      display: none;
+    }
+
+    .error-warn#error-warn-phone{
+      color:#FE4365 ;
+      display: none;
+    }
+    
+    .error-warn#error-warn-email-log{
+      color:#FE4365 ;
+      display: none;
+    }
+    
+    li a.sub-item:hover{
+      background-color: transparent !important;
+      color: #CC527A !important;
+    }
+
+    li a.sub-item-home:hover{
+      background-color: transparent !important;
+      color: #FF9913 !important;
+    }
+
+    .sub-nav-active{
+      color: #FF9913 !important;
+    }
+
+    #cont1{
+      background-color: #fbfaf5 !important;
+      color:  #2A363B !important;
+    }
+
+    #cont2{
+      background-color: #F5F0F0 !important;
+    }
+
+    #cont3{
+      background-color: #A8E6CE !important;
+    }
+
+    .text-cont{
+      margin: auto;
+    }
+
+    .ins-list{
+      font-size: 25px;
+      line-height: 40px;
+      margin: 10px 20px 10px 0px;
+    }
+
+    .shop-img{
+      border-radius: 5%;
+      box-shadow: 10px 10px 10px;
+    }
+
+    .store-name{
+      background: linear-gradient(to left, transparent 50%, #2A363B 50%) right;
+      background-size: 200%;
+      transition: .2s ease-out;
+    }
+
+    .store-name:hover{
+      background-position: left;
+      color: white !important;
+    }
+
+    .store-card{
+      border:none !important;
+    }
+
+    .carousel-caption{
+      background-color:rgb(0,0,0);opacity:0.8;
+      border-radius: 20px !important;
+    }
+
+    #open-hrs{
+      background-color: #FAF8F6 !important;
+    }
+
+    #info-store{
+      background-color: white !important;
+    }
+
+    #lazenbys-menu{
+      background-image: url("../img/mockup-photos-5nUNdLueQio-unsplash.jpg");
+      background-size: cover;
+      color:#F5F0F0 !important;
+    }
+
+    #loosegoose-menu{
+      background-image: url("../img/shapelined-_JBKdviweXI-unsplash.jpg");
+      background-size: cover;
+      color:#F5F0F0 !important;
+    }
+
+    .menu-container{
+      background-color: rgba(0,0,0,0.7);
+      border-radius: 10px;
+    }
+
+    .card{
+      border:none !important;
+    }
+
+    .laz-food-img{
+      border-radius: 7%;
+      border: 5px solid white;
+    }
+
+    .laz-food-img-large{
+      border-radius: 2%;
+      border: 5px solid white;
+    }
+
+
+
+    .laz-food-img-med{
+      border-radius: 5%;
+      border: 5px solid white;
+    }
+
+    .laz-food-title{
+      color: #FF9913 !important;
+    }
+
+    .my-4{
+      margin-bottom: 0px !important;
+    }
+
+
+    .food-container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .add-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+
+    .modal-management-header{
+      border: none !important;
+      background-color:#2A363B !important;
+      color:#F5F0F0 !important;
+    }
+
+    .modal-header{
+      border: none !important;
+      background-color:#FE4365;
+      color:#F5F0F0 !important;
+    }
+
+    .modal-footer{
+      border: none !important;
+    }
+
+    .sidebar{
+      height: 100%; 
+      width: 250px; 
+      position: fixed; 
+      top: 0;
+      background-color: #2A363B; 
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .sidebar a {
+      line-height: 40px;
+      padding: 5px 5px 6px 10px;
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+      display: block;
+    }
+
+    .sidebar a:hover {
+      color:#2A363B;
+      background-color: #F5F0F0;
+      transition: .2s ease-out;
+    }
+
+    .main-content{
+      margin-left: 250px;
+      margin-top: 50px;
+    }
+
+    .manage-content{
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    .active-manage{
+      color:#2A363B !important;
+      background-color: #F5F0F0;
+    }
+
+    .home-nav-manage{
+      margin-top: 60%;
+    }
+
+    .main-table{
+      background-color: #fbfaf5;
+    }
+
+    table a {
+      color:#2A363B;
+    }
+    table a:hover {
+      color:#FE4365;
+      transition: 0.2s ease-out;
+    }
+
+    .btn-add-close{
+      background-color:#F5F0F0 !important;
+    }
